@@ -1,0 +1,14 @@
+{
+	"name": "Mystic Gxme Network",
+	"short_name": "MGN",
+	"start_url": "/?home=true",
+	"description": "Proxy Using UV with many games.",
+	"icons": [
+		{
+		"src": "img/slides.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"display": "fullscreen"
+}

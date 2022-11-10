@@ -1,0 +1,16 @@
+<head>
+	<title>Google Slides</title>
+    <link rel="stylesheet" href="/sl0pe/TemplateData/style.css">
+    <script src="/sl0pe/TemplateData/UnityProgress.js"></script>
+    <script src="/sl0pe/TemplateData/unityloader41.js"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/slope.json", { onProgress: UnityProgress, Module: { onRuntimeInitialized: function() { UnityProgress(gameInstance, "complete") } } });
+    </script>
+</head>
+<body style="margin: 0; overflow: hidden;">
+    <div class="webgl-content">
+        <div id="gameContainer" style="width: 100%; height: 100%; margin: 0;"></div>
+    </div>
+    <script async src="//static.getclicky.com/101357250.js"></script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101357250ns.gif" /></p></noscript>
+</body>

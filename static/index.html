@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en-US">
+	<script async src="https://arc.io/widget.min.js#fRVAgrKA"> </script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="manifest" href="/manifest.json">
+		<body>
+			<title>thingy</title>
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+		<link href="style.css" rel="stylesheet" type="text/css">
+			<style>
+				.settings {
+	border-radius: 23px;
+	height: 23px;
+	width: 23px;
+	position: relative;
+	bottom: 12px;
+}
+				.main {
+					font-size: 35px;
+					text-align: center;
+				}
+				.info {
+					text-align: center;
+				}
+			</style>
+			<script>
+		function hideiframe()
+		{
+			document.getElementById("googleiframe").style.display = "none"
+		}
+
+	function showgoogleiframe()
+	{
+		var x = document.getElementById("googleiframe");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+	}
+		function showsettingsiframe()
+	{
+		var x = document.getElementById("settingsframe");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+	}
+			</script>
+			<ul class="top-navigation">
+  <li>
+    <a onclick="window.location.reload()">
+      <img class="settings" style="cursor: pointer;" src="img/home.png">
+    </a>
+  </li>
+				<li>
+    <a onclick="hideiframe();showgoogleiframe()">
+      <img class="settings" style="cursor: pointer;" src="img/games.png">
+    </a>
+  </li>
+				<li>
+    <a onclick="hideiframe();showsettingsiframe()">
+      <img class="settings" style="cursor: pointer;" src="img/settings.png">
+    </a>
+  </li>
+</ul>
+			<iframe
+  src="gxmes.html"
+  allowtransparency="true"
+  style="
+    position:fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow:scroll;
+    z-index: 100;
+    height: 93%;
+	display: none;
+	margin-top: 55px;
+  "
+  id="googleiframe">
+</iframe>
+			<iframe
+  src="settings.html"
+  allowtransparency="true"
+  style="
+    position:fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow:scroll;
+    z-index: 100;
+    height: 93%;
+	display: none;
+	margin-top: 55px;
+  "
+  id="settingsframe">
+</iframe>
+			<br>
+			<div class="main">
+		<h1 style="text-align: center;">mystic Gxme Network</h1>
+			</div>
+			<div class="info">
+		<h2 style="text-align: center;">Evade internet censorship and play games</h2>
+		</div>
+			<div class="search-box">
+		<form>
+		<input class="searchbox" type="text" placeholder="Type in a URL or search the web"></input>
+		</form>
+			</div>
+		<script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+    <script src="/index.js"></script>
+		</body>
+	</form>
+	</head>
+</html>
