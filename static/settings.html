@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<script src="https://cdn.jsdelivr.net/gh/FogNetwork/ABC/index.js"></script>
-		<script src="/ab.js"></script>
+		<script src="/js/ab.js"></script>
 			<title>thingy</title>
 			<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,16 +10,17 @@
 		<style>
 			
 		</style>
+				<script src="/js/settings.js"></script>
 		<h1>Settings</h1>
 		<body>
 			<div class="settingoptions">
 			<button onclick="ab()">About:Blank Cloaking</button>
 			<br>
 			<h2>Tab cloaking</h2>
-			<button style="width:100px;height: 50px;" type="button" onclick="setTitle(document.getElementById('icotitlechange').value); window.location.reload(true)">Title</button>
-<button style="width:100px;height: 50px;" type="button" onclick="setIcon(document.getElementById('icotitlechange').value); window.location.reload(true)">Icon</button>
+			<input class="title" id="title" placeholder="Title" oninput="document.title = this.value || 'Slides'; set('title', this.value)"></input>
+				<br>
+        <input class="link" id="link" placeholder="Favicon" onchange="faviconChange(this.value)"></input>
 		</div>
-			<script src="/settings.js"></script>
 		</body>
 	</head>
 </html>

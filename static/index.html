@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
-	<head lang="en-US">
+	<head>
 	<script async src="https://arc.io/widget.min.js#fRVAgrKA"> </script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="manifest" href="/manifest.json">
+		<link rel="icon" type="image/png" href="img/slides.png">
 		<body>
 			<title>thingy</title>
 			<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href="style.css" rel="stylesheet" type="text/css"></link>
 			<style>
 				.settings {
 	border-radius: 23px;
@@ -29,12 +30,12 @@
 			<script>
 		function hideiframe()
 		{
-			document.getElementById("googleiframe").style.display = "none"
+			document.getElementById("gxmeframe").style.display = "none"
 		}
 
-	function showgoogleiframe()
+	function showgxmeiframe()
 	{
-		var x = document.getElementById("googleiframe");
+		var x = document.getElementById("gxmeframe");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
@@ -58,7 +59,7 @@
     </a>
   </li>
 				<li>
-    <a onclick="hideiframe();showgoogleiframe()">
+    <a onclick="hideiframe();showgxmeiframe()">
       <img class="settings" style="cursor: pointer;" src="img/games.png">
     </a>
   </li>
@@ -86,7 +87,7 @@
 	display: none;
 	margin-top: 55px;
   "
-  id="googleiframe">
+  id="gxmeframe">
 </iframe>
 			<iframe
   src="settings.html"
@@ -116,8 +117,8 @@
 		<h2 style="text-align: center;">Evade internet censorship and play games</h2>
 		</div>
 			<div class="search-box">
-		<form>
-		<input class="searchbox" type="text" placeholder="Type in a URL or search the web"></input>
+		<form class="form">
+		<input class="form" type="text" placeholder="Type in a URL or search the web"></input>
 		</form>
 			</div>
 		<script src="uv/uv.bundle.js"></script>

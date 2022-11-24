@@ -2,18 +2,47 @@
 body {
 	font-family: "Poppins", sans-serif;
 	text-align: center;
-	background: #00b8b5;
+	background: #59885c;
 	
 }
-.imagebutton {
-    height: 150px;
-    width: 150px;
-    color: transparent;
+button {
+		width: fit-content;
+    height: 30px;
+		border-radius: 10px;
+		color: white;
+    border-style: solid;
+	margin-bottom: 5px;
+	background: grey;
   }
+::placeholder {
+	color: black;
+}
+.form {
+			position: absolute;
+			right: 42%;
+			bottom: 44%;
+			height: 30px;
+			width: fit-content;
+			text-align: center;
+			border-radius: 15px;
+			display: flex;
+			background: none;
+			color: black;
+	border-color: black;
+			-webkit-transition: 0.5s all ease;
+		transition: 0.5s ease all;
+		}
+button:hover {
+	cursor: pointer;
+}
 .search-box {
 	position: absolute;
 	margin-top: 75px;
 	width: 100%;
+}
+.link {
+	text-align: center;
+	margin-top: 50px;
 }
 .settings {
 	border-radius: 23px;
@@ -46,7 +75,7 @@ cursor: pointer;
 }
 
 .fa {
-	font-size: 20px;
+	font-size: 40px;
 	vertical-align: top;
 	opacity: 0.7;
 	cursor: default;
@@ -55,6 +84,9 @@ cursor: pointer;
 .fa:hover {
 	opacity: 1.0;
 }
+input {
+			border-style: solid;
+		}
 .settingoptions {
 	text-align: center;
 }
@@ -75,7 +107,7 @@ cursor: pointer;
 }
 
 .content h2:nth-child(2) {
-  color: #03a9f4;
+  color: #3c2f6a; gradient;
   animation: animate 4s ease-in-out infinite;
 }
 
@@ -115,54 +147,4 @@ iframe{
 }
 gxmes {
 	align-items: center;
-}
-
-/* CSS */
-.button-64 {
-  align-items: center;
-  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-  border: 0;
-  border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  display: flex;
-  font-family: Phantomsans, sans-serif;
-  font-size: 20px;
-  justify-content: center;
-  line-height: 1em;
-  max-width: 100%;
-  min-width: 140px;
-  padding: 3px;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.button-64:active,
-.button-64:hover {
-  outline: 0;
-}
-
-.button-64 span {
-  background-color: rgb(5, 6, 45);
-  padding: 16px 24px;
-  border-radius: 6px;
-  width: 100%;
-  height: 100%;
-  transition: 300ms;
-}
-
-.button-64:hover span {
-  background: none;
-}
-
-@media (min-width: 768px) {
-  .button-64 {
-    font-size: 24px;
-    min-width: 196px;
-  }
 }
