@@ -1,7 +1,9 @@
 {
   "dependencies": {
     "bare-server-node": "github:tomphttp/bare-server-node",
-    "node-static": "^0.7.11"
+    "jquery": "^3.6.1",
+    "node-static": "^0.7.11",
+    "socket.io": "^4.5.4"
   },
   "name": "ogn",
   "version": "1.0.0",
@@ -17,5 +19,3 @@
   "author": "",
   "license": "GPL-3.0-or-later"
 }
-
-
