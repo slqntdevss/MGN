@@ -148,3 +148,14 @@ iframe{
 gxmes {
 	align-items: center;
 }
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ff002b;
+  background-color: transparent;
+  text-decoration: none;
+}
