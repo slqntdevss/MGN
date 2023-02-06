@@ -3512,7 +3512,7 @@ Events.Setpieces = {
 			},
 			'cleared': {
 				text: [
-					_('the beast is dead.'),
+					_('the beast took a massive L.'),
 					_('the mine is now safe for workers.')
 				],
 				notification: _('the iron mine is clear of dangers'),
